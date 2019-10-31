@@ -11,6 +11,10 @@ use ContactManager\Controller\AppController;
  */
 class ContactsController extends AppController
 {
+
+    public function initialize(){
+        $this->loadModel('ContactsMangager.Contacts');
+    }
     /**
      * Index method
      *
